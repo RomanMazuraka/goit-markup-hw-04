@@ -408,6 +408,7 @@ section {
 
 .footer-container {
   display: block;
+  margin-right: 0;
 }
 
 .footer-link {
