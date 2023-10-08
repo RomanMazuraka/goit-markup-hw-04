@@ -430,7 +430,6 @@ address {
   display: block;
   max-width: 100%;
   height: auto;
-  overflow-clip-margin: content-box;
   overflow: clip;
 }
 
@@ -520,6 +519,7 @@ address {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .footer-social-media-list {
