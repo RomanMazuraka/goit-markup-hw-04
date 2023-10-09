@@ -71,10 +71,6 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
   margin-right: 76px;
   padding: 24px 0 24px;
 }
@@ -84,6 +80,7 @@ address {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  font-weight: 700;
 }
 
 .hader-list {
@@ -95,6 +92,18 @@ address {
 }
 
 .hader-menu-item {
+  color: #2e2f42;
+}
+
+.hader-menu-item-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 24px 0px;
+  display: block;
+  font-weight: 500;
+  width: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hader-menu-item-link-first {
@@ -105,6 +114,7 @@ address {
   padding: 24px 0px;
   display: block;
   position: relative;
+  font-weight: 500;
   width: 100%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -132,6 +142,7 @@ address {
 }
 
 .hader-address-item-link {
+  display: block;
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
@@ -230,7 +241,6 @@ address {
 
 .advantages-company-item-icon-container {
   display: flex;
-  width: 264px;
   height: 112px;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
@@ -241,9 +251,6 @@ address {
 }
 
 .advantages-company-item-icon {
-  width: 64px;
-  height: 64px;
-  fill: #2e2f42;
   flex-shrink: 0;
 }
 .advantages-company-list {
@@ -259,13 +266,13 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 .advantages-company-item-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
 }
 
 /* Section 3 */
@@ -318,6 +325,7 @@ address {
 }
 
 .team-company-item-title {
+  font-weight: 500;
   color: #2e2f42;
   font-size: 20px;
   line-height: 1.2;
@@ -360,7 +368,6 @@ address {
 .team-company-item-icon {
   width: 16px;
   height: 16px;
-  flex-shrink: 0;
   fill: #f4f4fd;
 }
 
@@ -372,8 +379,6 @@ address {
 }
 
 .company-portfolio {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
 }
 
 .portfolio-company-title {
@@ -397,9 +402,12 @@ address {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-company-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-company-item-overlay {
@@ -422,7 +430,7 @@ address {
   color: #f4f4fd;
 }
 
-.portfolio-company-item-overlay:hover .overlay-text {
+.portfolio-company-item:hover .overlay-text {
   transform: translateY(0);
 }
 
@@ -434,6 +442,7 @@ address {
 }
 
 .portfolio-company-item-title {
+  font-weight: 500;
   color: #2e2f42;
   font-size: 20px;
   line-height: 1.2;
@@ -480,7 +489,7 @@ address {
 }
 
 .footer-link {
-  display: inline-flex;
+  display: inline-block;
   color: #4d5ae5;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
@@ -507,9 +516,6 @@ address {
 }
 
 .footer-social-media {
-  display: block;
-  margin: 0;
-  padding: 0;
 }
 
 .footer-social-media-title {
@@ -545,10 +551,6 @@ address {
 }
 
 .footer-item-icon {
-  display: flex;
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
   fill: #f4f4fd;
 }
 
